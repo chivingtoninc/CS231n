@@ -1,5 +1,5 @@
 <p align="center">
-  <img width='350' height='350' src='https://github.com/chivingtoninc/CS231n/blob/master/imgs/numpy.png' alt='Numpy Logo' />
+  <img width='350' height='350' src='https://github.com/chivingtoninc/CS231n/blob/master/imgs/sail_logo.png' alt='Numpy Logo' />
 </p>
 
 # CS231n
