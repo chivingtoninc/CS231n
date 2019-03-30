@@ -59,8 +59,7 @@ Feel free to ask me questions on [GitHub](https://github.com/chivingtoninc), [Tw
 Not currently accepting outside contributors, but feel free to clone, fork, modify and use as you wish.
 
 ## Acknowledgments
-   * Thank you to [Andrew Ng](https://twitter.com/AndrewYNg) for making the [Machine Learning Course](https://www.coursera.org/learn/machine-learning) and [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning) on [Coursera](https://www.coursera.org).
-   * Thank you to [Justin Johnson](https://cs.stanford.edu/people/jcjohns/) for the [Python Numpy Tutorial](http://cs231n.github.io/python-numpy-tutorial/)
+   * Thank you to [Dr. Li](http://vision.stanford.edu/feifeili/), [Andrej Karpathy](https://cs.stanford.edu/people/karpathy/), [Justin Johnson](https://cs.stanford.edu/people/jcjohns/), [Serena Yeung](http://ai.stanford.edu/~syyeung/), and all of the many TA's and other staff who have made this content open to the public!
 
 ## License
 This project is licensed under the DO_WHATEVER_YOU_WANT License - see the [LICENSE](https://github.com/chivingtoninc/CS231n/blob/master/LICENSE) file for details
