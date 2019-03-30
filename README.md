@@ -22,12 +22,6 @@ This repo is not for use in a production environment. It is for learning about N
 * [License](https://github.com/chivingtoninc/CS231n#license)
 <br/>
 
-## Prerequisites
-  * Python
-  * Numpy
-  * Matplotlib
-<br/><br/>
-
 
 ## Installation
 ```
@@ -39,7 +33,7 @@ This repo is not for use in a production environment. It is for learning about N
 Navigate to the CS231n directory and run.
 ```
   cd /path/to/CS231n/some/project
-  python project1.py
+  python someProject.py
 ```
 <br/>
 
