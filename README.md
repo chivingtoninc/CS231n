@@ -1,5 +1,5 @@
 <p align="center">
-  <img width='350' height='350' src='https://github.com/chivingtoninc/CS231n/blob/master/imgs/svl.png' alt='SVL Logo' />
+  <img src='https://github.com/chivingtoninc/CS231n/blob/master/imgs/svl.png' alt='SVL Logo' />
 </p>
 
 # CS231n
