@@ -5,14 +5,11 @@
 # CS231n
 Assignments and projects for CS231n: Convolutional Neural Networks for Visual Recognition
 
-This repo is not for use in a production environment. It is for learning about Neural Net architectures and best practices.
-
 ![Build Status](https://img.shields.io/badge/build-Stable-green.svg)
 ![License](https://img.shields.io/badge/license-DO_WHATEVER_YOU_WANT-green.svg)
 <br/><br/><br/>
 
 ## Contents
-* [Prerequisites](https://github.com/chivingtoninc/CS231n#prerequisites)
 * [Installation](https://github.com/chivingtoninc/CS231n#installation)
 * [Testing](https://github.com/chivingtoninc/CS231n#testing)
 * [Usage](https://github.com/chivingtoninc/CS231n#usage)
