@@ -65,6 +65,11 @@ class KNearestNeighbor(object):
     num_test = X.shape[0]
     num_train = self.X_train.shape[0]
     dists = np.zeros((num_test, num_train))
+    
+    import time
+    t0 = time.process_time()
+        
+        
     for i in xrange(num_test):
       for j in xrange(num_train):
         #####################################################################
@@ -73,10 +78,14 @@ class KNearestNeighbor(object):
         # training point, and store the result in dists[i, j]. You should   #
         # not use a loop over dimension.                                    #
         #####################################################################
-        dists[i,j] = np.linalg.norm(self.X_train[j] - X[i])
+        # dists[i,j] = np.sum(np.square(self.X_train[j,:] - X[i,:]))  # ~28s
+        dists[i,j] = np.linalg.norm(self.X_train[j,:] - X[i,:])       # ~21s
         #####################################################################
         #                       END OF YOUR CODE                            #
         #####################################################################
+        
+    t1 = time.process_time()
+    print('time: %s' % str(t1-t0))
     return dists
 
   def compute_distances_one_loop(self, X):
@@ -155,8 +164,8 @@ class KNearestNeighbor(object):
       # neighbors. Store these labels in closest_y.                           #
       # Hint: Look up the function numpy.argsort.                             #
       #########################################################################
-      k_nearest = np.argsort(dists[i])[:k]
-      closest_y = self.y_train(k_nearest)
+      k_nearest = dists[i].argsort()[:k]  # first k indices of sorted args
+      closest_y = self.y_train[k_nearest]      # store y labels for k-nearest
       #########################################################################
       # TODO:                                                                 #
       # Now that you have found the labels of the k nearest neighbors, you    #
@@ -164,7 +173,7 @@ class KNearestNeighbor(object):
       # Store this label in y_pred[i]. Break ties by choosing the smaller     #
       # label.                                                                #
       #########################################################################
-      pass
+      y_pred[i] = max(closest_y, key=closest_y.count)
       #########################################################################
       #                           END OF YOUR CODE                            # 
       #########################################################################
